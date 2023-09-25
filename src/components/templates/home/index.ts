@@ -1,15 +1,4 @@
-export {default as HeroSection} from './HeroSection'
-export {default as FlexibleSection} from './FlexibleSection'
-export {default as SaveTimeSection} from './SaveTimeSection'
-export {default as ManageOrdersSection} from './ManageOrdersSection'
-export {default as CreateStoreSection} from './CreateStoreSection'
-export {default as LinkBioSection} from './LinkBioSection'
-export {default as LinkWhatsappSection} from './LinkWhatsappSection'
-// export {default as SupportSection} from './SupportSection'
-export {default as OurPartnersSection} from './OurPartnersSection'
-export {default as PricingSection} from './PricingSection'
-export {default as FAQSection} from './FAQSection'
-export {default as SecondaryCTASection} from './SecondaryCTASection'
-
-// rtial
-export {default as SectionTemplate} from './SectionTemplate'
+export {default as FeatureSection} from  './features'
+export { default as StandoutFeatures } from "./more";
+export { default as IndividualFeatures } from "./indidual";
+export { default as Testimonials } from "./testimonials";
