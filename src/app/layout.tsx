@@ -4,8 +4,8 @@ import type { Metadata } from 'next'
 
 
 export const metadata: Metadata = {
-  title: "Odasasa ",
-  description: "Odasasa official website",
+  title: "Knektor ",
+  description: "Knektor official website",
   icons: [
     {
       rel: "icon",
@@ -41,6 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className='w-full '>
+        
         <GlobalContextProvider>
         {children}
         </GlobalContextProvider>
