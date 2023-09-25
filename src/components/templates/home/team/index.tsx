@@ -1,3 +1,4 @@
+import { Img } from "@/components";
 import React from "react";
 
 interface TeamMember {
@@ -20,7 +21,7 @@ const TeamMemberCard: React.FC<TeamMember> = ({
   return (
     <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
       <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src={imageSrc} alt={name} className="w-full h-48 object-cover" />
+        <Img src={imageSrc} alt={name} className="w-full h-48 object-cover" />
         <div className="p-4">
           <h3 className="text-xl font-bold mb-2">{name}</h3>
           <p className="text-gray-600 mb-2">{role}</p>

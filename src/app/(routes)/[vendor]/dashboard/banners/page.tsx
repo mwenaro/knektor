@@ -31,17 +31,16 @@ const BannersPage = ({params}:any) => {
 console.log({params})
 
     useEffect(() => {
-        if (success) {
-            // alert(filepath)
-            setBanners(old => {
-                let bnrs = old as BannerProp[]
-                bnrs[activeIndx!].src = `${filepath}`
-                return bnrs
-            })
-            setActiveIndx(null)
-
-        }
-    }, [filepath,success])
+      if (success) {
+        // alert(filepath)
+        setBanners((old) => {
+          let bnrs = old as BannerProp[];
+          bnrs[activeIndx!].src = `${filepath}`;
+          return bnrs;
+        });
+        setActiveIndx(null);
+      }
+    }, [filepath, success, activeIndx]);
 
     // // let data = use(fetchData('/api/banner'));
     // useEffect(() => {

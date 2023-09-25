@@ -1,3 +1,4 @@
+import { Img } from "@/components";
 import React from "react";
 
 interface BlogPost {
@@ -16,7 +17,7 @@ const BlogCard: React.FC<BlogPost> = ({
   return (
     <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-6 mb-8">
       <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img
+        <Img
           src={imageUrl}
           alt="Blog Post Image"
           className="w-full h-48 object-cover"
