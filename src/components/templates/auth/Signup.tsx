@@ -70,13 +70,11 @@ interface SignupProps {
 const Signup = ({ setOp, className = "" }: SignupProps) => {
   const initialValues = {
     email: "",
-    idNumber: "",
     password: "",
     name: "",
     confirmPassword: "",
     phone: "",
-    businessName: "",
-    vendor: "",
+    username: "",
   };
 
   const router = useRouter();
@@ -92,7 +90,7 @@ const Signup = ({ setOp, className = "" }: SignupProps) => {
       ).json();
       console.log(data);
       // alert(JSON.stringify(data));
-     Swal.fire("Account Successfully created.Go to login");
+      Swal.fire("Account Successfully created.Go to login");
 
       router.push("/auth/login");
     } catch (error: any) {
@@ -108,30 +106,15 @@ const Signup = ({ setOp, className = "" }: SignupProps) => {
       type: "text",
     },
     {
-      name: "idNumber",
-      label: "ID Number",
+      name: "username",
+      label: "Username",
       type: "string",
     },
 
     {
-      name: "phone",
-      label: "Phone Number",
-      type: "tel",
-    },
-    {
       name: "email",
-      label: "Email Address",
+      label: "E-mail Address",
       type: "email",
-    },
-    {
-      name: "businessName",
-      label: "Business Name",
-      type: "text",
-    },
-    {
-      label: "Business Code",
-      name: "vendor",
-      type: "text",
     },
     {
       name: "password",
@@ -190,6 +173,7 @@ const Signup = ({ setOp, className = "" }: SignupProps) => {
 
           <div className="px-3 w-full mb-3">
             <Button
+            disabled={true}
               className="bg-auth-blue hover:auth-hover_blue text-white w-full  py-2"
               type="submit"
             >

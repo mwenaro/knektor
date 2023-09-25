@@ -21,10 +21,13 @@ export default function Home() {
         <AuthNav />
       </VendorHeader>
       <p className="mt-20"></p>
-      <BannerImage imageSrc="/assets/hero_banner.jpg">
+      <BannerImage imageSrc="/assets/hero_banner.jpg" className="h-[400px] ">
         <div className="w-full h-full flex flex-col justify-center items-center">
-          <Typography variant="h1">
-            The ulmate to link to service providers!
+          <Typography variant="h1" className="max-w-[800px] text-center">
+            Dependable Personalized Support, at your finger tips!
+          </Typography>
+          <Typography variant="p">
+            Book a proffesional tasker from Knektor today!
           </Typography>
           <div className="w-full flex flex-row space-x-4  my-5 justify-center items-center">
             {/* primary button */}

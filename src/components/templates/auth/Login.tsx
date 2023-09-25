@@ -71,7 +71,7 @@ const Login = ({ className = "" }: LoginProps) => {
   const loginFields = [
     {
       name: "email",
-      label: "Enter Email or code ",
+      label: "Enter Email or Username ",
       type: "text",
     },
     {
@@ -136,6 +136,7 @@ const Login = ({ className = "" }: LoginProps) => {
           />
           <div className="px-3 w-full">
             <Button
+            disabled={true}
               className="bg-auth-blue hover:auth-hover_blue text-white w-full  py-2"
               type="submit"
             >

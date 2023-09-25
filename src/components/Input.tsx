@@ -74,18 +74,25 @@ const Input: React.FC<InputFieldProps> = ({
         </Field>
       ) : type === "password" ? (
         <>
-        <Field
-          {...others}
-          id={name}
-          type={showPwd?'text' : type}
-          name={name}
-          className={` w-full ${classes}`}
-        />
-        <span className="h-full absolute  right-4 flex justify-center items-center" onClick={()=>setShowPwd(!showPwd)}>
-         { !showPwd? <FaEye className="my-auto" />:<FaEyeSlash className="my-auto" />}
-        </span>
+          <Field
+            {...others}
+            id={name}
+            type={showPwd ? "text" : type}
+            name={name}
+            placeholder={!labeled ? label : ""}
+            className={` w-full ${classes}`}
+          />
+          <span
+            className="h-full absolute  right-4 flex justify-center items-center"
+            onClick={() => setShowPwd(!showPwd)}
+          >
+            {!showPwd ? (
+              <FaEye className="my-auto" />
+            ) : (
+              <FaEyeSlash className="my-auto" />
+            )}
+          </span>
         </>
-          
       ) : type === "checkbox" ? (
         <label
           htmlFor={name}
