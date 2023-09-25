@@ -11,24 +11,24 @@ export const metadata: Metadata = {
       rel: "icon",
       type: "image/png",
       sizes: "180x180",
-      url: "/favicon/apple-touch-icon.png",
+      url: "/assets/logo.png",
     },
     {
       rel: "icon",
       type: "image/png",
       sizes: "32x32",
-      url: "/favicon/favicon-32x32.png",
+      url: "/assets/logo.png",
     },
     {
       rel: "icon",
       type: "image/png",
       sizes: "16x16",
-      url: "/favicon/favicon-16x16.png",
+      url: "/assets/logo.png",
     },
     {
       rel: "apple-touch-icon",
       sizes: "180x180",
-      url: "/favicon/apple-touch-icon.png",
+      url: "/assets/logo.png",
     },
   ],
 };
